@@ -40,7 +40,7 @@ const DefaultTabBar = React.createClass({
 
     return <Button
       style={styles.flexOne}
-      key={name}
+      key={(name)?name:`button-key=${page}`}
       accessible={true}
       accessibilityLabel={name}
       accessibilityTraits='button'
